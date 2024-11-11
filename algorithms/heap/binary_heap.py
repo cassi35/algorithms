@@ -120,3 +120,10 @@ class BinaryHeap(AbstractHeap):
         self.heap.pop()
         self.perc_down(1)
         return ret
+heap = BinaryHeap()
+heap.insert(3)
+heap.insert(10)
+heap.insert(11)
+heap.insert(2)
+print(heap.remove_min())
+print(heap.current_size)
